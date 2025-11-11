@@ -1,0 +1,9 @@
+plugins = [
+    "!error",
+]
+packages = [
+    "/static/wheels/Calculator-0.0.1-py3-none-any.whl",
+    "/static/wheels/toga_core-0.5.2-py3-none-any.whl",
+    "/static/wheels/toga_web-0.5.2-py3-none-any.whl",
+    "/static/wheels/travertino-0.5.2-py3-none-any.whl",
+]
