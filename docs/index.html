@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="static/css/briefcase.css">
 </head>
 <body>
-    <h1>Calculator</h1>
+
+    <h1>Loading Calculator...</h1>
 
     <py-env>
         - static/wheels/Calculator-0.0.1-py3-none-any.whl
@@ -24,9 +25,10 @@
         - static/wheels/travertino-0.5.2-py3-none-any.whl
     </py-env>
 
-    <script type="py">
+    <py-script>
         import runpy
         runpy.run_module("Calculator", run_name="__main__", alter_sys=True)
-    </script>
+    </py-script>
+
 </body>
 </html>
