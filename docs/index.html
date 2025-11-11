@@ -16,14 +16,16 @@
 </head>
 <body>
 
-    <h1>Loading Calculator...</h1>
+    <div id="briefcase-splash">
+        <img src="static/logo-32.png" alt="Loading logo">
+        <p>Loading Calculator...</p>
+    </div>
 
-    <py-env>
-        - static/wheels/Calculator-0.0.1-py3-none-any.whl
-        - static/wheels/toga_web-0.5.2-py3-none-any.whl
-        - static/wheels/toga_core-0.5.2-py3-none-any.whl
-        - static/wheels/travertino-0.5.2-py3-none-any.whl
-    </py-env>
+    <!-- Add wheels to sys.path so Calculator module can be found -->
+    <py-script>
+        import sys
+        sys.path.append("static/wheels")
+    </py-script>
 
     <py-script>
         import runpy
